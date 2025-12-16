@@ -1,156 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Sistema Solidario - Oportunidad Real</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    :root { --primary:#2e8b57; --accent:#28a745; --bg:#f9f9f9; --text:#222; --muted:#444; --border:#dcdcdc; }
-    body { font-family: Verdana, Arial, sans-serif; font-size: 18px; margin:0; padding:0; background:var(--bg); color:var(--text); line-height:1.6; }
-    header { text-align:center; padding:30px 20px 10px; background:#fff; border-bottom:5px solid var(--primary); }
-    header h1 { margin:0; font-size:2.4em; color:var(--primary); }
-    header p { font-size:1.3em; color:var(--muted); }
-    section { padding:40px 20px; max-width:1000px; margin:auto; background:#fff; }
-    h2 { color:var(--primary); margin-top:0; }
-    .spaced-title { margin-top:40px; }
-    ul { padding-left:20px; }
-    .image-block { margin:30px 0; text-align:center; }
-    .image-block img { max-width:100%; height:auto; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1); border:1px solid var(--border); }
-    .cta { text-align:center; margin:40px 0; }
-    .cta button { background:var(--accent); color:#fff; border:none; padding:18px 36px; font-size:1.3em; cursor:pointer; border-radius:8px; }
-    .cta button:hover { background:#218838; }
-    .opciones-pago { display:none; text-align:center; margin-top:20px; }
-    .opciones-pago h3 { margin-bottom:20px; color:var(--primary); }
-    .opciones-pago button { background:var(--primary); color:#fff; border:none; padding:14px 28px; font-size:1.1em; cursor:pointer; border-radius:6px; margin:10px; }
-    .opciones-pago button:hover { background:#256d46; }
-    .error { color:#b00020; margin-top:12px; font-size:0.95em; }
-    table { width:100%; border-collapse:collapse; margin:30px 0 40px; border:1px solid var(--border); font-size:1.1em; }
-    th, td { border:1px solid var(--border); padding:14px; text-align:center; }
-    th { background-color:#eef6f0; color:#111; }
-    footer { background:var(--primary); color:#fff; text-align:center; padding:20px; font-size:1em; }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema Solidario</title>
+
+    <!-- Tipografía moderna y limpia -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Fondo claro */
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: #222;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        p {
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.9rem;
+            }
+            p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>Sistema Solidario</h1>
-    <p>Una oportunidad real para emprendedores y familias con pocos recursos</p>
-  </header>
-
-  <section>
-    <h2>¿Qué es Sistema Solidario?</h2>
-    <p>
-      El mundo se ha vuelto cada vez más difícil para quienes buscan un sustento diario. 
-      Sistema Solidario nace para dar una salida laboral independiente 
-      a personas con necesidades económicas, emprendedores y familias que buscan una oportunidad real inmediata.
-    </p>
-
-    <div class="image-block">
-      <img src="https://i.postimg.cc/mZK9vM8H/Sistema-Solidario.png" alt="Emprendedor y familia unidos en esperanza">
+    <div class="container">
+        <h1>Gracias por estar aquí.</h1>
+        <p>
+            Estamos trabajando en algo grande para ayudarte a generar ingresos online de forma simple, recurrente y automatizada.<br><br>
+            Muy pronto abriremos las puertas.
+        </p>
     </div>
-
-    <h2 class="spaced-title">Cómo funciona</h2>
-    <ul>
-      <li>Acceso mediante una suscripción mensual de 15 USD.</li>
-      <li>Recibirás tu propio enlace personal para compartir el sistema.</li>
-      <li>Cada persona que se suscriba con tu enlace pagará 15 USD al mes.</li>
-      <li>De cada suscripción, 10 USD van directamente a tu cuenta y 5 USD para sostener el sistema funcional.</li>
-      <li>Los ingresos son recurrentes mes a mes, siempre que mantengas tu suscripción activa.</li>
-    </ul>
-
-    <h2>¿Qué pasa si no pagás tu suscripción?</h2>
-    <p>
-      Si en algún momento no mantenés tu suscripción activa, tus referidos no se verán afectados y seguirán usando el sistema normalmente.
-      Sin embargo, los 15 USD que ellos paguen durante tu inactividad se asignarán automáticamente al sistema, sin posibilidad de recuperarlos.
-      Cuando retomes tu suscripción, todo vuelve a la normalidad y tus referidos seguirán vinculados a vos para pagos futuros; los montos perdidos en los meses inactivos no se reintegran.
-    </p>
-    <p>
-      Si permanecés inactivo durante 6 meses consecutivos, tu cuenta se reiniciará y se perderán el historial y los referidos previos. 
-      Esta medida busca mantener una red activa y justa, siempre con empatía y respeto por cada participante.
-    </p>
-
-    <h2>Potencial de ingresos mensuales</h2>
-    <p>Tu esfuerzo puede traducirse en ingresos reales. Mirá esta tabla de ejemplo:</p>
-
-    <table>
-      <tr><th>Referidos activos</th><th>Ingreso mensual estimado</th></tr>
-      <tr><td>5 personas</td><td>50 USD</td></tr>
-      <tr><td>10 personas</td><td>100 USD</td></tr>
-      <tr><td>25 personas</td><td>250 USD</td></tr>
-      <tr><td>50 personas</td><td>500 USD</td></tr>
-      <tr><td>100 personas</td><td>1000 USD</td></tr>
-    </table>
-
-    <h2 class="spaced-title">Transparencia y compromiso</h2>
-    <p>
-      Este sistema es una oportunidad legítima de generar ingresos mediante donaciones voluntarias. 
-      No prometemos resultados garantizados: tu éxito depende de tu esfuerzo, constancia y estrategias para compartir el sistema. 
-      Sistema Solidario, el creador y/o programadores, no se hacen responsables de pérdidas económicas ni problemas legales. 
-      Sistema Solidario fue creado con la intención de ayudar a los emprendedores y a las familias.
-    </p>
-
-    <div class="cta">
-      <h2>Empieza hoy</h2>
-      <p>Tu oportunidad de generar ingresos recurrentes está a un clic de distancia.</p>
-      <button id="btn-unirme">Unirme al Sistema Solidario</button>
-    </div>
-
-    <!-- Opciones de pago dinámicas -->
-    <div id="opcionesPago" class="opciones-pago" aria-live="polite">
-      <h3>Elige tu método de pago</h3>
-      <button id="boton-pago" disabled>Cargando link de MercadoPago...</button>
-      <button onclick="window.location.href='TU_LINK_BINANCE'">Pagar con Binance</button>
-      <button onclick="window.location.href='TU_LINK_PAYPAL'">Pagar con PayPal</button>
-      <div id="error-msg" class="error" style="display:none;"></div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2026 Sistema Solidario – Creado para ayudar a las familias y emprendedores</p>
-  </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const btnUnirme = document.getElementById('btn-unirme');
-      const opciones = document.getElementById('opcionesPago');
-      const botonMP = document.getElementById('boton-pago');
-      const errorMsg = document.getElementById('error-msg');
-
-      btnUnirme.addEventListener('click', function () {
-        opciones.style.display = 'block';
-        window.scrollTo({ top: opciones.offsetTop, behavior: 'smooth' });
-
-        // Alias dinámico desde la URL
-        const params = new URLSearchParams(window.location.search);
-        const alias = params.get('alias') || "usuario123";
-
-        const backendURL = `https://sistema-solidario-backend-production.up.railway.app/pagar/${alias}`;
-
-        botonMP.textContent = 'Cargando link de MercadoPago...';
-        botonMP.disabled = true;
-        errorMsg.style.display = 'none';
-        errorMsg.textContent = '';
-
-        fetch(backendURL)
-          .then(res => {
-            if (!res.ok) throw new Error('Respuesta no OK del backend');
-            return res.json();
-          })
-          .then(data => {
-            const link = data.init_point;
-            if (!link) throw new Error('init_point ausente en la respuesta');
-            botonMP.textContent = 'Pagar con MercadoPago';
-            botonMP.disabled = false;
-            botonMP.onclick = () => window.location.href = link;
-          })
-          .catch(err => {
-            console.error('Error al obtener el link de pago:', err);
-            botonMP.textContent = 'No se pudo cargar MercadoPago';
-            botonMP.disabled = true;
-            errorMsg.textContent = 'Hubo un problema al cargar el link de pago. Intentá de nuevo en unos segundos.';
-            errorMsg.style.display = 'block';
-          });
-      });
-    });
-  </script>
 </body>
 </html>
