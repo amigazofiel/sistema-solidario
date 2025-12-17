@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sistema Solidario</title>
+    <title>Sistema Solidario | Generá ingresos online simples, honestos y recurrentes</title>
 
-    <!-- Tipografía moderna -->
+    <!-- SEO -->
+    <meta name="description" content="Sistema Solidario es una plataforma honesta y automatizada para generar ingresos online en USDT. Simple, transparente y accesible para cualquier persona que quiera emprender por internet sin riesgos ni esquemas dudosos.">
+    <meta name="keywords" content="ingresos online, ingresos recurrentes, ganar dinero por internet, emprender online, USDT, BEP20, sistema automatizado, oportunidad honesta, Argentina">
+    <meta name="author" content="Sistema Solidario">
+
+    <!-- Open Graph (para compartir en redes) -->
+    <meta property="og:title" content="Sistema Solidario | Ingresos online simples y honestos">
+    <meta property="og:description" content="Un sistema automatizado, transparente y accesible para generar ingresos recurrentes en USDT.">
+    <meta property="og:type" content="website">
+
+    <!-- Tipografía -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
@@ -14,34 +24,80 @@
             padding: 0;
             background-color: #f9f9f9;
             font-family: 'Inter', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: center;
             color: #222;
+            line-height: 1.6;
         }
 
-        .container {
-            max-width: 420px;
-            width: 90%;
+        header {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #222;
+            font-weight: 500;
+        }
+
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-btn {
+            background: #222;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            display: inline-block;
+        }
+
+        .section {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-size: 1.9rem;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 25px;
+        }
+
+        /* Formulario */
+        .form-container {
             background: white;
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        }
-
-        h1 {
-            font-size: 1.9rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        p {
-            font-size: 1.1rem;
-            font-weight: 300;
-            color: #444;
-            margin-bottom: 1.5rem;
+            max-width: 450px;
+            margin: 50px auto;
+            text-align: center;
         }
 
         input {
@@ -80,58 +136,118 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Bienvenido a Sistema Solidario</h1>
-        <p>Registrate para ser parte del lanzamiento oficial.</p>
 
-        <form id="formRegistro">
-            <input type="text" id="nombre" placeholder="Tu nombre" required />
-            <input type="email" id="email" placeholder="Tu email" required />
-            <button type="submit">Crear cuenta</button>
-        </form>
+<header>
+    <nav>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#transparencia">Transparencia</a>
+        <a href="#registro" class="cta-btn">Registrarme</a>
+    </nav>
+</header>
 
-        <div class="mensaje-exito" id="mensajeExito">
-            Tu cuenta fue creada. Te damos la bienvenida a Sistema Solidario y te deseamos lo mejor.
-        </div>
+<section class="hero">
+    <h1>Generá ingresos online simples, honestos y recurrentes con Sistema Solidario</h1>
+    <p>Un sistema automatizado, transparente y justo para todas las personas que quieran emprender por internet sin complicaciones ni esquemas dudosos.</p>
+    <a href="#registro" class="cta-btn">Quiero unirme al lanzamiento</a>
+</section>
+
+<section id="como-funciona" class="section">
+    <h2>¿Qué es Sistema Solidario?</h2>
+    <p>Sistema Solidario es una plataforma diseñada para ayudarte a generar ingresos online de forma estable, ética y sostenible. No necesitás experiencia previa ni conocimientos técnicos.</p>
+
+    <h3>1. Honestidad</h3>
+    <p>Nada de pirámides, estafas ni estructuras ilegales. Todo es claro, directo y ético.</p>
+
+    <h3>2. Automatización</h3>
+    <p>El sistema trabaja por vos. Vos solo compartís tu enlace personal.</p>
+
+    <h3>3. Justicia</h3>
+    <p>Todos tienen las mismas oportunidades. No importa si recién empezás.</p>
+</section>
+
+<section class="section">
+    <h2>Cómo funciona</h2>
+
+    <h3>Paso 1 — Te registrás</h3>
+    <p>Solo necesitás tu nombre y email.</p>
+
+    <h3>Paso 2 — Accedés a tu panel</h3>
+    <p>Vas a ver tu enlace personal, tus referidos, tus ingresos y tu progreso.</p>
+
+    <h3>Paso 3 — Generás ingresos recurrentes</h3>
+    <p>El sistema distribuye las ganancias de forma automática y justa. Los pagos se realizan en <strong>USDT (BEP‑20)</strong>.</p>
+</section>
+
+<section id="transparencia" class="section">
+    <h2>Transparencia desde el primer momento</h2>
+    <p>Para acceder al sistema completo se requiere una <strong>inversión inicial accesible de 15 USDT (BEP‑20)</strong>.</p>
+    <p>No es un gasto: es tu llave de acceso a un sistema automatizado, sostenible y diseñado para generar ingresos recurrentes de manera justa y transparente.</p>
+    <p>No trabajamos con costos ocultos ni sorpresas. Creemos en oportunidades reales, no en lo “gratis” que después termina siendo caro.</p>
+</section>
+
+<section class="section">
+    <h2>¿Por qué elegir Sistema Solidario?</h2>
+
+    <p>✅ Ingresos reales y recurrentes</p>
+    <p>✅ Accesible para cualquier persona</p>
+    <p>✅ Pagos en USDT (BEP‑20)</p>
+    <p>✅ Modelo transparente y legal</p>
+    <p>✅ Construcción de comunidad</p>
+</section>
+
+<section id="registro" class="form-container">
+    <h2>Crear mi cuenta</h2>
+    <p>Registrate para ser parte del lanzamiento oficial.</p>
+
+    <form id="formRegistro">
+        <input type="text" id="nombre" placeholder="Tu nombre" required />
+        <input type="email" id="email" placeholder="Tu email" required />
+        <button type="submit">Crear cuenta</button>
+    </form>
+
+    <div class="mensaje-exito" id="mensajeExito">
+        Tu cuenta fue creada. Te damos la bienvenida a Sistema Solidario y te deseamos lo mejor.
     </div>
+</section>
 
-    <script>
-        // ✅ Captura automática de referidos (primer clic gana)
-        const params = new URLSearchParams(window.location.search);
-        const ref = params.get("ref");
+<script>
+    // ✅ Captura automática de referidos (primer clic gana)
+    const params = new URLSearchParams(window.location.search);
+    const ref = params.get("ref");
 
-        if (ref && !localStorage.getItem("ref")) {
-            localStorage.setItem("ref", ref);
-        }
+    if (ref && !localStorage.getItem("ref")) {
+        localStorage.setItem("ref", ref);
+    }
 
-        // ✅ Envío del formulario
-        document.getElementById("formRegistro").addEventListener("submit", async (e) => {
-            e.preventDefault();
+    // ✅ Envío del formulario
+    document.getElementById("formRegistro").addEventListener("submit", async (e) => {
+        e.preventDefault();
 
-            const nombre = document.getElementById("nombre").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const referido_por = localStorage.getItem("ref") || null;
+        const nombre = document.getElementById("nombre").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const referido_por = localStorage.getItem("ref") || null;
 
-            try {
-                const respuesta = await fetch("https://sistema-solidario-backend-v2.onrender.com/api/registro", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ nombre, email, referido_por })
-                });
+        try {
+            const respuesta = await fetch("https://sistema-solidario-backend-v2.onrender.com/api/registro", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ nombre, email, referido_por })
+            });
 
-                const data = await respuesta.json();
+            const data = await respuesta.json();
 
-                if (respuesta.ok) {
-                    document.getElementById("formRegistro").style.display = "none";
-                    document.getElementById("mensajeExito").style.display = "block";
-                } else {
-                    alert(data.error || "Ocurrió un error.");
-                }
-
-            } catch (error) {
-                alert("Error de conexión con el servidor.");
+            if (respuesta.ok) {
+                document.getElementById("formRegistro").style.display = "none";
+                document.getElementById("mensajeExito").style.display = "block";
+            } else {
+                alert(data.error || "Ocurrió un error.");
             }
-        });
-    </script>
+
+        } catch (error) {
+            alert("Error de conexión con el servidor.");
+        }
+    });
+</script>
+
 </body>
 </html>
