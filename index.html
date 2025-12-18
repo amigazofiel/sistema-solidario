@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sistema Solidario | Ingresos online simples, honestos y recurrentes</title>
+    <title>Sistema Solidario | Generá ingresos online simples, honestos y recurrentes</title>
 
     <!-- SEO -->
     <meta name="description" content="Sistema Solidario es una plataforma honesta y automatizada para generar ingresos online en USDT. Simple, transparente y accesible para cualquier persona que quiera emprender por internet sin riesgos ni esquemas dudosos.">
     <meta name="keywords" content="ingresos online, ingresos recurrentes, ganar dinero por internet, emprender online, USDT, BEP20, sistema automatizado, oportunidad honesta, Argentina">
     <meta name="author" content="Sistema Solidario">
 
-    <!-- Open Graph -->
+    <!-- Open Graph (para compartir en redes) -->
     <meta property="og:title" content="Sistema Solidario | Ingresos online simples y honestos">
     <meta property="og:description" content="Un sistema automatizado, transparente y accesible para generar ingresos recurrentes en USDT.">
     <meta property="og:type" content="website">
 
     <!-- Tipografía -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
         body {
             margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
             font-family: 'Inter', sans-serif;
-            background-color: #f7f7f7;
             color: #222;
             line-height: 1.6;
         }
 
-        /* HEADER */
         header {
             background: white;
             padding: 20px;
@@ -45,118 +45,65 @@
             font-weight: 500;
         }
 
-        .cta-header {
-            background: #00a86b;
-            color: white !important;
-            padding: 10px 18px;
-            border-radius: 8px;
-        }
-
-        /* HERO */
         .hero {
-            background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-            height: 85vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            padding: 60px 20px;
             text-align: center;
-            padding: 20px;
-            color: white;
-            position: relative;
-        }
-
-        .hero::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: rgba(0,0,0,0.45);
-        }
-
-        .hero-content {
-            position: relative;
-            max-width: 800px;
+            max-width: 900px;
+            margin: auto;
         }
 
         .hero h1 {
-            font-size: 2.8rem;
+            font-size: 2.4rem;
             font-weight: 700;
             margin-bottom: 20px;
         }
 
         .hero p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-bottom: 30px;
         }
 
         .cta-btn {
-            background: #00a86b;
+            background: #222;
             color: white;
-            padding: 14px 30px;
-            border-radius: 10px;
+            padding: 14px 28px;
+            border-radius: 8px;
             text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: 600;
+            font-size: 1.1rem;
             display: inline-block;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
 
-        /* SECCIONES */
         .section {
-            max-width: 1000px;
-            margin: 60px auto;
+            max-width: 900px;
+            margin: 50px auto;
             padding: 0 20px;
         }
 
-        .section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            text-align: center;
+        h2 {
+            font-size: 1.9rem;
+            margin-bottom: 15px;
         }
 
-        .section p {
-            font-size: 1.1rem;
-            line-height: 1.7;
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 25px;
         }
 
-        /* PRUEBA SOCIAL */
-        .social-proof {
-            background: white;
-            padding: 50px 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            text-align: center;
-        }
-
-        .faces {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .faces img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        /* FORMULARIO */
+        /* Formulario */
         .form-container {
             background: white;
-            padding: 40px;
+            padding: 30px;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
             max-width: 450px;
-            margin: 60px auto;
+            margin: 50px auto;
             text-align: center;
         }
 
         input {
             width: 100%;
-            padding: 14px;
-            margin: 10px 0;
+            padding: 12px;
+            margin: 8px 0;
             border-radius: 8px;
             border: 1px solid #ccc;
             font-size: 1rem;
@@ -164,14 +111,18 @@
 
         button {
             width: 100%;
-            padding: 14px;
-            background-color: #00a86b;
+            padding: 12px;
+            background-color: #222;
             color: white;
             border: none;
             border-radius: 8px;
             font-size: 1.1rem;
             cursor: pointer;
             margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #444;
         }
 
         .mensaje-exito {
@@ -190,31 +141,16 @@
     <nav>
         <a href="#como-funciona">Cómo funciona</a>
         <a href="#transparencia">Transparencia</a>
-        <a href="#registro" class="cta-header">Registrarme</a>
+        <a href="#registro" class="cta-btn">Registrarme</a>
     </nav>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-    <div class="hero-content">
-        <h1>Construí ingresos online simples, honestos y recurrentes</h1>
-        <p>Un sistema automatizado, transparente y accesible para todas las personas que quieran emprender por internet sin complicaciones.</p>
-        <a href="#registro" class="cta-btn">Quiero unirme al lanzamiento</a>
-    </div>
+    <h1>Generá ingresos online simples, honestos y recurrentes con Sistema Solidario</h1>
+    <p>Un sistema automatizado, transparente y justo para todas las personas que quieran emprender por internet sin complicaciones ni esquemas dudosos.</p>
+    <a href="#registro" class="cta-btn">Quiero unirme al lanzamiento</a>
 </section>
 
-<!-- PRUEBA SOCIAL -->
-<section class="section social-proof">
-    <h2>Millones de personas ya generan ingresos online</h2>
-    <p>Todos los días, personas de todo el mundo participan en sistemas automatizados que les permiten construir ingresos reales y sostenibles. Sistema Solidario toma lo mejor de esos modelos y lo adapta a un formato justo, transparente y pensado para nuestra realidad.</p>
-
-    <div class="faces">
-        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=400&q=80" alt="Persona feliz">
-        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80" alt="Persona feliz">
-    </div>
-</section>
-
-<!-- SECCIÓN: QUÉ ES -->
 <section id="como-funciona" class="section">
     <h2>¿Qué es Sistema Solidario?</h2>
     <p>Sistema Solidario es una plataforma diseñada para ayudarte a generar ingresos online de forma estable, ética y sostenible. No necesitás experiencia previa ni conocimientos técnicos.</p>
@@ -229,7 +165,6 @@
     <p>Todos tienen las mismas oportunidades. No importa si recién empezás.</p>
 </section>
 
-<!-- SECCIÓN: CÓMO FUNCIONA -->
 <section class="section">
     <h2>Cómo funciona</h2>
 
@@ -243,7 +178,6 @@
     <p>El sistema distribuye las ganancias de forma automática y justa. Los pagos se realizan en <strong>USDT (BEP‑20)</strong>.</p>
 </section>
 
-<!-- SECCIÓN: TRANSPARENCIA -->
 <section id="transparencia" class="section">
     <h2>Transparencia desde el primer momento</h2>
     <p>Para acceder al sistema completo se requiere una <strong>inversión inicial accesible de 15 USDT (BEP‑20)</strong>.</p>
@@ -251,7 +185,6 @@
     <p>No trabajamos con costos ocultos ni sorpresas. Creemos en oportunidades reales, no en lo “gratis” que después termina siendo caro.</p>
 </section>
 
-<!-- SECCIÓN: BENEFICIOS -->
 <section class="section">
     <h2>¿Por qué elegir Sistema Solidario?</h2>
 
@@ -262,7 +195,6 @@
     <p>✅ Construcción de comunidad</p>
 </section>
 
-<!-- FORMULARIO -->
 <section id="registro" class="form-container">
     <h2>Crear mi cuenta</h2>
     <p>Registrate para ser parte del lanzamiento oficial.</p>
@@ -279,14 +211,15 @@
 </section>
 
 <script>
-    // Captura de referidos
+    // ✅ Captura automática de referidos (primer clic gana)
     const params = new URLSearchParams(window.location.search);
     const ref = params.get("ref");
+
     if (ref && !localStorage.getItem("ref")) {
         localStorage.setItem("ref", ref);
     }
 
-    // Envío del formulario
+    // ✅ Envío del formulario
     document.getElementById("formRegistro").addEventListener("submit", async (e) => {
         e.preventDefault();
 
